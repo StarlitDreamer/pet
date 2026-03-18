@@ -1,7 +1,7 @@
 import request from '@/utils/request'
 
-export function getEmployees() {
-  return request.get('/employee/list')
+export function getEmployees(params) {
+  return request.get('/employee/list', { params })
 }
 
 export function addEmployee(data) {
@@ -13,5 +13,5 @@ export function updateEmployee(data) {
 }
 
 export function deleteEmployee(id) {
-  return request.delete(`/employee/delete/${id}`)
+  return request.delete(`/employee/${id}`)
 }

@@ -108,7 +108,7 @@ const fetchData = async () => {
       stats.activeOrders = Array.isArray(orders) ? orders.filter(o => ['pending_accept', 'accepted', 'checked_in'].includes(o.status)).length : 0
     }
     if (msgRes.status === 'fulfilled') {
-      stats.unreadMessages = msgRes.value.data || 
+      stats.unreadMessages = msgRes.value.data?.count || 0
     }
   } finally {
     loading.value = false

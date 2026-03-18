@@ -113,6 +113,13 @@ const defaultForm = {
 }
 const form = reactive({ ...defaultForm })
 
+const resetForm = () => {
+  Object.keys(form).forEach((key) => {
+    delete form[key]
+  })
+  Object.assign(form, defaultForm)
+}
+
 const rules = {
   name: [{ required: true, message: '请输入服务名称', trigger: 'blur' }],
   species: [{ required: true, message: '请选择适用种类', trigger: 'change' }],
@@ -133,9 +140,10 @@ const fetchServices = async () => {
 const openDialog = (row) => {
   isEdit.value = !!row
   if (row) {
+    resetForm()
     Object.assign(form, row)
   } else {
-    Object.assign(form, defaultForm)
+    resetForm()
   }
   dialogVisible.value = true
 }
@@ -149,7 +157,16 @@ const handleSubmit = () => {
         await updateService(form)
         ElMessage.success('更新成功')
       } else {
-        await addService({ ...form, shopId: shopId.value })
+        await addService({
+          shopId: shopId.value,
+          name: form.name,
+          description: form.description,
+          species: form.species,
+          price: form.price,
+          originalPrice: form.originalPrice,
+          unit: form.unit,
+          includes: form.includes
+        })
         ElMessage.success('添加成功')
       }
       dialogVisible.value = false

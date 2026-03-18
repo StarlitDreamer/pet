@@ -5,7 +5,7 @@ export function getMessages(params) {
 }
 
 export function getUnreadCount() {
-  return request.get('/message/unread/count')
+  return request.get('/message/unread-count')
 }
 
 export function markRead(id) {
@@ -13,5 +13,5 @@ export function markRead(id) {
 }
 
 export function markAllRead() {
-  return request.put('/message/read/all')
+  return request.put('/message/read-all')
 }

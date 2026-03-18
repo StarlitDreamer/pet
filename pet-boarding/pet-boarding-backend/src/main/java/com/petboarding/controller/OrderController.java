@@ -195,7 +195,8 @@ public class OrderController {
             throw new BusinessException("Order not found");
         }
         verifyProviderPermission(userId, order.getShopId());
-        if (!Constants.ORDER_CHECKED_IN.equals(order.getStatus())) {
+        if (!Constants.ORDER_CHECKED_IN.equals(order.getStatus())
+                && !Constants.ORDER_BOARDING.equals(order.getStatus())) {
             throw new BusinessException("Order status does not allow check-out");
         }
         OrderInfo update = new OrderInfo();

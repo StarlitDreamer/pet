@@ -42,6 +42,8 @@ public class ServiceItemController {
         if (shop == null || !shop.getProviderId().equals(userId)) {
             throw new BusinessException("Shop not found or no permission");
         }
+        serviceItem.setId(null);
+        serviceItem.setShopId(shop.getId());
         serviceItem.setStatus(Constants.SERVICE_ON_SHELF);
         serviceItemService.save(serviceItem);
         return Result.success();
@@ -58,6 +60,7 @@ public class ServiceItemController {
         if (shop == null || !shop.getProviderId().equals(userId)) {
             throw new BusinessException("No permission");
         }
+        serviceItem.setShopId(dbItem.getShopId());
         serviceItemService.updateById(serviceItem);
         return Result.success();
     }

@@ -13,9 +13,9 @@ export function updatePet(data) {
 }
 
 export function deletePet(id) {
-  return request.delete(`/pet/delete/${id}`)
+  return request.delete(`/pet/${id}`)
 }
 
 export function getPetDetail(id) {
-  return request.get(`/pet/detail/${id}`)
+  return request.get(`/pet/${id}`)
 }

@@ -25,9 +25,12 @@ public class EmployeeController {
     }
 
     @GetMapping("/list")
-    public Result<List<Employee>> list(@RequestParam Long shopId) {
+    public Result<List<Employee>> list(@RequestParam(required = false) Long shopId,
+                                       HttpServletRequest request) {
+        Long userId = (Long) request.getAttribute("userId");
+        Shop shop = resolveProviderShop(userId, shopId);
         LambdaQueryWrapper<Employee> wrapper = new LambdaQueryWrapper<>();
-        wrapper.eq(Employee::getShopId, shopId);
+        wrapper.eq(Employee::getShopId, shop.getId());
         wrapper.orderByDesc(Employee::getCreateTime);
         List<Employee> employees = employeeService.list(wrapper);
         return Result.success(employees);
@@ -36,10 +39,8 @@ public class EmployeeController {
     @PostMapping("/add")
     public Result<?> add(@RequestBody Employee employee, HttpServletRequest request) {
         Long userId = (Long) request.getAttribute("userId");
-        Shop shop = shopService.getById(employee.getShopId());
-        if (shop == null || !shop.getProviderId().equals(userId)) {
-            throw new BusinessException("No permission");
-        }
+        Shop shop = resolveProviderShop(userId, employee.getShopId());
+        employee.setShopId(shop.getId());
         employee.setStatus(1);
         employeeService.save(employee);
         return Result.success();
@@ -73,5 +74,24 @@ public class EmployeeController {
         }
         employeeService.removeById(id);
         return Result.success();
+    }
+
+    private Shop resolveProviderShop(Long userId, Long shopId) {
+        if (shopId != null) {
+            Shop shop = shopService.getById(shopId);
+            if (shop == null || !shop.getProviderId().equals(userId)) {
+                throw new BusinessException("No permission");
+            }
+            return shop;
+        }
+
+        LambdaQueryWrapper<Shop> wrapper = new LambdaQueryWrapper<>();
+        wrapper.eq(Shop::getProviderId, userId);
+        wrapper.orderByDesc(Shop::getCreateTime);
+        Shop shop = shopService.getOne(wrapper.last("limit 1"));
+        if (shop == null) {
+            throw new BusinessException("Shop not found");
+        }
+        return shop;
     }
 }

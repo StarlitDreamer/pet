@@ -77,7 +77,7 @@ const activeMenu = computed(() => route.path)
 const fetchUnreadCount = async () => {
   try {
     const res = await getUnreadCount()
-    unreadCount.value = res.data || 0
+    unreadCount.value = res.data?.count || 0
   } catch (e) {
     // ignore
   }

@@ -5,7 +5,7 @@ export function getShopList(params) {
 }
 
 export function getShopDetail(id) {
-  return request.get(`/shop/detail/${id}`)
+  return request.get(`/shop/${id}`)
 }
 
 export function addShop(data) {

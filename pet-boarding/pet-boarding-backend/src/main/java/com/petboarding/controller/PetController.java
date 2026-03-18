@@ -33,7 +33,11 @@ public class PetController {
     @PostMapping("/add")
     public Result<?> add(@RequestBody Pet pet, HttpServletRequest request) {
         Long userId = (Long) request.getAttribute("userId");
+        pet.setId(null);
         pet.setOwnerId(userId);
+        if (pet.getStatus() == null) {
+            pet.setStatus(1);
+        }
         petService.save(pet);
         return Result.success();
     }
@@ -44,6 +48,10 @@ public class PetController {
         Pet dbPet = petService.getById(pet.getId());
         if (dbPet == null || !dbPet.getOwnerId().equals(userId)) {
             throw new BusinessException("Pet not found or no permission");
+        }
+        pet.setOwnerId(dbPet.getOwnerId());
+        if (pet.getStatus() == null) {
+            pet.setStatus(dbPet.getStatus());
         }
         petService.updateById(pet);
         return Result.success();

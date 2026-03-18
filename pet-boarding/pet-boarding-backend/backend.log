@@ -1,0 +1,1157 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.petboarding:pet-boarding-backend >----------------
+[INFO] Building pet-boarding-backend 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:2.7.18:run (default-cli) > test-compile @ pet-boarding-backend >>>
+[WARNING] The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ pet-boarding-backend ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ pet-boarding-backend ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ pet-boarding-backend ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory D:\code\github\pet\pet-boarding\pet-boarding-backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ pet-boarding-backend ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:2.7.18:run (default-cli) < test-compile @ pet-boarding-backend <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:2.7.18:run (default-cli) @ pet-boarding-backend ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.18)
+
+2026-03-18 17:19:25.720  INFO 34520 --- [           main] com.petboarding.PetBoardingApplication   : Starting PetBoardingApplication using Java 19.0.2 on LAPTOP-P0S3P5SE with PID 34520 (D:\code\github\pet\pet-boarding\pet-boarding-backend\target\classes started by chenjupeng in D:\code\github\pet\pet-boarding\pet-boarding-backend)
+2026-03-18 17:19:25.721 DEBUG 34520 --- [           main] com.petboarding.PetBoardingApplication   : Running with Spring Boot v2.7.18, Spring v5.3.31
+2026-03-18 17:19:25.722  INFO 34520 --- [           main] com.petboarding.PetBoardingApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-03-18 17:19:26.530  INFO 34520 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2026-03-18 17:19:26.541  INFO 34520 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-18 17:19:26.542  INFO 34520 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-03-18 17:19:26.620  INFO 34520 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-18 17:19:26.620  INFO 34520 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 859 ms
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@788ba63e'
+Property 'mapperLocations' was not specified.
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.3.1 
+2026-03-18 17:19:27.450  INFO 34520 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2026-03-18 17:19:27.457  INFO 34520 --- [           main] com.petboarding.PetBoardingApplication   : Started PetBoardingApplication in 2.012 seconds (JVM running for 2.245)
+2026-03-18 17:19:38.221  INFO 34520 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-18 17:19:38.221  INFO 34520 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-18 17:19:38.222  INFO 34520 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31b9fe9d] was not registered for synchronization because synchronization is not active
+2026-03-18 17:19:38.325  WARN 34520 --- [nio-8080-exec-1] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @305fd85d
+2026-03-18 17:19:38.335  INFO 34520 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-18 17:19:38.453  INFO 34520 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+JDBC Connection [HikariProxyConnection@2094328304 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31b9fe9d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@152588c3] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@467825687 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@152588c3]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3ad41a88] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@873722786 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3ad41a88]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41371c5a] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1396609203 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,role,real_name,id_card,phone,email,avatar,status,verified,points,create_time,update_time FROM user WHERE (username = ? AND password = ?)
+==> Parameters: owner_zhang(String), e10adc3949ba59abbe56e057f20f883e(String)
+<==    Columns: id, username, password, role, real_name, id_card, phone, email, avatar, status, verified, points, create_time, update_time
+<==        Row: 1, owner_zhang, e10adc3949ba59abbe56e057f20f883e, 1, 张三, 110101199001011234, 13800001001, zhangsan@example.com, /avatars/user1.jpg, 1, 1, 260, 2025-01-10 08:00:00, 2026-03-18 15:22:35
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41371c5a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c256003] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@916103736 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 1(Long)
+<==    Columns: id, owner_id, name, species, breed, gender, age, weight, photo, health_status, vaccination, allergies, habits, emergency_contact, emergency_phone, status, create_time, update_time
+<==        Row: 2, 1, 咪咪, 猫, 英国短毛猫, 2, 24, 4.20, /pets/pet2.jpg, 健康, 猫三联已接种, 对鸡肉过敏, <<BLOB>>, 张三, 13800001001, 1, 2025-01-15 10:30:00, 2026-03-18 15:22:35
+<==        Row: 1, 1, 豆豆, 狗, 金毛寻回犬, 1, 36, 28.50, /pets/pet1.jpg, 健康, 狂犬疫苗、六联疫苗均已接种, 无, <<BLOB>>, 张三, 13800001001, 1, 2025-01-15 10:00:00, 2026-03-18 15:22:35
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c256003]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6dd3fe8c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@902687791 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: INSERT INTO pet ( owner_id, name, species, breed, gender, age, weight, health_status, vaccination, allergies, habits, emergency_contact, emergency_phone, status, create_time, update_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 1(Long), codex-temp-pet(String), ?(String), ???(String), 1(Integer), 6(Integer), 3.5(BigDecimal), ??(String), ???(String), ?(String), ??(String), ??(String), 13800001001(String), 1(Integer), 2026-03-18T17:19:54.072652(LocalDateTime), 2026-03-18T17:19:54.072652(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6dd3fe8c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65354b04] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1811065298 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 1(Long)
+<==    Columns: id, owner_id, name, species, breed, gender, age, weight, photo, health_status, vaccination, allergies, habits, emergency_contact, emergency_phone, status, create_time, update_time
+<==        Row: 5, 1, codex-temp-pet, ?, ???, 1, 6, 3.50, null, ??, ???, ?, <<BLOB>>, ??, 13800001001, 1, 2026-03-18 17:19:54, 2026-03-18 17:19:54
+<==        Row: 2, 1, 咪咪, 猫, 英国短毛猫, 2, 24, 4.20, /pets/pet2.jpg, 健康, 猫三联已接种, 对鸡肉过敏, <<BLOB>>, 张三, 13800001001, 1, 2025-01-15 10:30:00, 2026-03-18 15:22:35
+<==        Row: 1, 1, 豆豆, 狗, 金毛寻回犬, 1, 36, 28.50, /pets/pet1.jpg, 健康, 狂犬疫苗、六联疫苗均已接种, 无, <<BLOB>>, 张三, 13800001001, 1, 2025-01-15 10:00:00, 2026-03-18 15:22:35
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65354b04]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24035f40] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@717534640 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE id=?
+==> Parameters: 5(Long)
+<==    Columns: id, owner_id, name, species, breed, gender, age, weight, photo, health_status, vaccination, allergies, habits, emergency_contact, emergency_phone, status, create_time, update_time
+<==        Row: 5, 1, codex-temp-pet, ?, ???, 1, 6, 3.50, null, ??, ???, ?, <<BLOB>>, ??, 13800001001, 1, 2026-03-18 17:19:54, 2026-03-18 17:19:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24035f40]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6bf9bf8b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1524126425 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: UPDATE pet SET owner_id=?, name=?, species=?, breed=?, gender=?, age=?, weight=?, health_status=?, vaccination=?, allergies=?, habits=?, emergency_contact=?, emergency_phone=?, status=?, update_time=? WHERE id=?
+==> Parameters: 1(Long), codex-temp-pet(String), dog(String), test-breed(String), 2(Integer), 7(Integer), 4.25(BigDecimal), ok(String), done(String), none(String), playful(String), tester(String), 13800001001(String), 1(Integer), 2026-03-18T17:20:19.182351700(LocalDateTime), 5(Long)
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@89149bc] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@151438663 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE id=?
+==> Parameters: 5(Long)
+<==    Columns: id, owner_id, name, species, breed, gender, age, weight, photo, health_status, vaccination, allergies, habits, emergency_contact, emergency_phone, status, create_time, update_time
+<==        Row: 5, 1, codex-temp-pet, ?, ???, 1, 6, 3.50, null, ??, ???, ?, <<BLOB>>, ??, 13800001001, 1, 2026-03-18 17:19:54, 2026-03-18 17:19:54
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@89149bc]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33cc65b5] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1698791579 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: DELETE FROM pet WHERE id=?
+==> Parameters: 5(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6bf9bf8b]
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33cc65b5]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7149b658] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2140034561 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7149b658]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3671b23b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@702731625 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3671b23b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5adf7e2c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1669699108 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5adf7e2c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@752ef999] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1865723374 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@752ef999]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3191f52e] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@664356645 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3191f52e]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b57714b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@578547429 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b57714b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c1c69d6] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2140086528 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 6(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c1c69d6]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ac4c251] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@494417124 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: total
+<==        Row: 2
+<==      Total: 1
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE (status = ?) ORDER BY rating DESC LIMIT ?
+==> Parameters: 1(Integer), 10(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ac4c251]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bd640c4] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@787088409 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 6(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bd640c4]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14c82493] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78dd7c8b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1148783218 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 6(Long)
+JDBC Connection [HikariProxyConnection@1132919233 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14c82493]
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78dd7c8b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48b96c80] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1634638107 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM order_info WHERE (owner_id = ?)
+==> Parameters: 6(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48b96c80]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1bffb22e] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@988840291 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM order_info WHERE (owner_id = ?)
+==> Parameters: 6(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1bffb22e]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17e1c782] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@352388822 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 6(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17e1c782]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14cef45a] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@709380968 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14cef45a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@712dca49] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1103114254 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@712dca49]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4860dfa5] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2059550000 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: INSERT INTO pet ( owner_id, name, species, breed, gender, age, health_status, vaccination, allergies, habits, emergency_contact, emergency_phone, status, create_time, update_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 6(Long), 1(String), 狗(String), (String), 1(Integer), 0(Integer), (String), (String), (String), (String), (String), (String), 1(Integer), 2026-03-18T17:21:50.746903100(LocalDateTime), 2026-03-18T17:21:50.746903100(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4860dfa5]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7938bf5a] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1523597183 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 6(Long)
+<==    Columns: id, owner_id, name, species, breed, gender, age, weight, photo, health_status, vaccination, allergies, habits, emergency_contact, emergency_phone, status, create_time, update_time
+<==        Row: 6, 6, 1, 狗, , 1, 0, null, null, , , , <<BLOB>>, , , 1, 2026-03-18 17:21:51, 2026-03-18 17:21:51
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7938bf5a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@367109c1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@261668779 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE id=?
+==> Parameters: 6(Long)
+<==    Columns: id, owner_id, name, species, breed, gender, age, weight, photo, health_status, vaccination, allergies, habits, emergency_contact, emergency_phone, status, create_time, update_time
+<==        Row: 6, 6, 1, 狗, , 1, 0, null, null, , , , <<BLOB>>, , , 1, 2026-03-18 17:21:51, 2026-03-18 17:21:51
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@367109c1]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@216ccbc2] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@535683375 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: DELETE FROM pet WHERE id=?
+==> Parameters: 6(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@216ccbc2]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1add33b9] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1331978445 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 6(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1add33b9]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20bf29cb] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1bf7e6a4] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1901294281 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 6(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20bf29cb]
+JDBC Connection [HikariProxyConnection@309069403 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: total
+<==        Row: 2
+<==      Total: 1
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE (status = ?) ORDER BY rating DESC LIMIT ?
+==> Parameters: 1(Integer), 10(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1bf7e6a4]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7dff523c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@519046653 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7dff523c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e9bd623] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1106980923 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,role,real_name,id_card,phone,email,avatar,status,verified,points,create_time,update_time FROM user WHERE (username = ? AND password = ?)
+==> Parameters: owner_zhang(String), e10adc3949ba59abbe56e057f20f883e(String)
+<==    Columns: id, username, password, role, real_name, id_card, phone, email, avatar, status, verified, points, create_time, update_time
+<==        Row: 1, owner_zhang, e10adc3949ba59abbe56e057f20f883e, 1, 张三, 110101199001011234, 13800001001, zhangsan@example.com, /avatars/user1.jpg, 1, 1, 260, 2025-01-10 08:00:00, 2026-03-18 15:22:35
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e9bd623]
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@64150df0] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18bff4ff] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1491844167 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 6(Long)
+JDBC Connection [HikariProxyConnection@1937727845 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop WHERE (status = ?)
+<==      Total: 0
+==> Parameters: 1(Integer)
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@64150df0]
+<==    Columns: total
+<==        Row: 2
+<==      Total: 1
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE (status = ?) ORDER BY rating DESC LIMIT ?
+==> Parameters: 1(Integer), 10(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18bff4ff]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41bec26b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@105587525 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41bec26b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46eb0260] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@895001087 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46eb0260]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1271eda7] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2019426330 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE id=?
+==> Parameters: 1(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1271eda7]
+Creating a new SqlSession
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16d5dffe] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f60ec23] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1df6304d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1418614731 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1697992070 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long)
+==> Parameters: 6(Long), 0(Integer)
+<==      Total: 0
+<==    Columns: total
+<==        Row: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16d5dffe]
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1df6304d]
+JDBC Connection [HikariProxyConnection@1438512047 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM order_info WHERE (owner_id = ?)
+==> Parameters: 6(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f60ec23]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1deec723] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@445057040 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 6(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1deec723]
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3269c33a] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e97c74] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@124117482 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 6(Long)
+<==      Total: 0
+JDBC Connection [HikariProxyConnection@843264410 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop WHERE (status = ?)
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e97c74]
+==> Parameters: 1(Integer)
+<==    Columns: total
+<==        Row: 2
+<==      Total: 1
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE (status = ?) ORDER BY rating DESC LIMIT ?
+==> Parameters: 1(Integer), 10(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3269c33a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b66459b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1931110363 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE id=?
+==> Parameters: 1(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b66459b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@305f86ef] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@122009365 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE id=?
+==> Parameters: 2(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@305f86ef]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c8f5be3] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@317304848 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE id=?
+==> Parameters: 1(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c8f5be3]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cf6bb6] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@449749565 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE id=?
+==> Parameters: 2(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cf6bb6]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2cb9e834] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@338425970 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2cb9e834]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f60b0b4] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1358333859 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: total
+<==        Row: 2
+<==      Total: 1
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE (status = ?) ORDER BY rating DESC LIMIT ?
+==> Parameters: 1(Integer), 10(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f60b0b4]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c3a7a9f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@248064353 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: total
+<==        Row: 2
+<==      Total: 1
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE (status = ?) ORDER BY rating DESC LIMIT ?
+==> Parameters: 1(Integer), 10(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c3a7a9f]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a114e96] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1093489448 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a114e96]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c833eb0] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@625010056 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c833eb0]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e4c1c06] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@623391668 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: total
+<==        Row: 2
+<==      Total: 1
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE (status = ?) ORDER BY rating DESC LIMIT ?
+==> Parameters: 1(Integer), 10(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e4c1c06]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fce60ac] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1716363859 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: total
+<==        Row: 2
+<==      Total: 1
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE (status = ?) ORDER BY rating DESC LIMIT ?
+==> Parameters: 1(Integer), 10(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fce60ac]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5469c60e] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@416111250 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM order_info WHERE (owner_id = ?)
+==> Parameters: 6(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5469c60e]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b3dcd65] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1975874627 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM order_info WHERE (owner_id = ? AND status = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b3dcd65]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3babe25a] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1195752514 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM order_info WHERE (owner_id = ? AND status = ?)
+==> Parameters: 6(Long), 1(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3babe25a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3bae5c8c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1479932805 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM order_info WHERE (owner_id = ? AND status = ?)
+==> Parameters: 6(Long), 3(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3bae5c8c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@514fbaf2] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@895542503 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM order_info WHERE (owner_id = ? AND status = ?)
+==> Parameters: 6(Long), 6(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@514fbaf2]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7322e780] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@879188644 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM order_info WHERE (owner_id = ? AND status = ?)
+==> Parameters: 6(Long), 7(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7322e780]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56f1ad05] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1991523507 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM order_info WHERE (owner_id = ? AND status = ?)
+==> Parameters: 6(Long), 6(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56f1ad05]
+Creating a new SqlSession
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dfe9f0e] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54d9bd6e] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1092b0e2] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1603130012 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1704033022 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long)
+==> Parameters: 6(Long), 0(Integer)
+<==      Total: 0
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1092b0e2]
+JDBC Connection [HikariProxyConnection@2041555606 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM order_info WHERE (owner_id = ?)
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54d9bd6e]
+==> Parameters: 6(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dfe9f0e]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35bbee04] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@804783883 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 6(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35bbee04]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75d3823f] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1052b0f1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1957248641 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 6(Long)
+<==      Total: 0
+JDBC Connection [HikariProxyConnection@1188870507 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop WHERE (status = ?)
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75d3823f]
+==> Parameters: 1(Integer)
+<==    Columns: total
+<==        Row: 2
+<==      Total: 1
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE (status = ?) ORDER BY rating DESC LIMIT ?
+==> Parameters: 1(Integer), 10(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1052b0f1]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f5ebb85] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@115201246 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM order_info WHERE (owner_id = ?)
+==> Parameters: 6(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f5ebb85]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8df630b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@611041480 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM order_info WHERE (owner_id = ? AND status = ?)
+==> Parameters: 6(Long), 6(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8df630b]
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30368da8] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b920403] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e64ced2] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1577237043 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1422680777 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 6(Long)
+==> Parameters: 6(Long), 0(Integer)
+<==      Total: 0
+<==    Columns: total
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30368da8]
+JDBC Connection [HikariProxyConnection@623299998 wrapping com.mysql.cj.jdbc.ConnectionImpl@72a03c2d] will not be managed by Spring
+<==        Row: 0
+==>  Preparing: SELECT COUNT(*) AS total FROM order_info WHERE (owner_id = ?)
+<==      Total: 1
+==> Parameters: 6(Long)
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b920403]
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e64ced2]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b6fbf3e] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@851727856 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM order_info WHERE (owner_id = ?)
+==> Parameters: 6(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b6fbf3e]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5823634f] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a32af2c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@827097514 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 6(Long)
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c5ccbff] was not registered for synchronization because synchronization is not active
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5823634f]
+JDBC Connection [HikariProxyConnection@368536625 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+JDBC Connection [HikariProxyConnection@1343466912 wrapping com.mysql.cj.jdbc.ConnectionImpl@72a03c2d] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM order_info WHERE (owner_id = ?)
+==> Parameters: 6(Long)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c5ccbff]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a32af2c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6db09fa7] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1308914843 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 6(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6db09fa7]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51f1da4a] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1799995746 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: INSERT INTO pet ( owner_id, name, species, breed, gender, age, health_status, vaccination, allergies, habits, emergency_contact, emergency_phone, status, create_time, update_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 6(Long), 1(String), 狗(String), (String), 1(Integer), 0(Integer), (String), (String), (String), (String), (String), (String), 1(Integer), 2026-03-18T17:24:28.856163700(LocalDateTime), 2026-03-18T17:24:28.856163700(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51f1da4a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e976836] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@488872404 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 6(Long)
+<==    Columns: id, owner_id, name, species, breed, gender, age, weight, photo, health_status, vaccination, allergies, habits, emergency_contact, emergency_phone, status, create_time, update_time
+<==        Row: 7, 6, 1, 狗, , 1, 0, null, null, , , , <<BLOB>>, , , 1, 2026-03-18 17:24:29, 2026-03-18 17:24:29
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e976836]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70c624ba] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1956232391 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70c624ba]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2bea94aa] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@951314036 wrapping com.mysql.cj.jdbc.ConnectionImpl@72a03c2d] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE id=?
+==> Parameters: 7(Long)
+<==    Columns: id, owner_id, name, species, breed, gender, age, weight, photo, health_status, vaccination, allergies, habits, emergency_contact, emergency_phone, status, create_time, update_time
+<==        Row: 7, 6, 1, 狗, , 1, 0, null, null, , , , <<BLOB>>, , , 1, 2026-03-18 17:24:29, 2026-03-18 17:24:29
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2bea94aa]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3ee629ef] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1104586077 wrapping com.mysql.cj.jdbc.ConnectionImpl@72a03c2d] will not be managed by Spring
+==>  Preparing: UPDATE pet SET owner_id=?, name=?, species=?, breed=?, gender=?, age=?, health_status=?, vaccination=?, allergies=?, habits=?, emergency_contact=?, emergency_phone=?, status=?, update_time=? WHERE id=?
+==> Parameters: 6(Long), 1(String), 猫(String), (String), 1(Integer), 0(Integer), (String), (String), (String), (String), (String), (String), 1(Integer), 2026-03-18T17:24:35.191179400(LocalDateTime), 7(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3ee629ef]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a347844] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1095620381 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 6(Long)
+<==    Columns: id, owner_id, name, species, breed, gender, age, weight, photo, health_status, vaccination, allergies, habits, emergency_contact, emergency_phone, status, create_time, update_time
+<==        Row: 7, 6, 1, 猫, , 1, 0, null, null, , , , <<BLOB>>, , , 1, 2026-03-18 17:24:29, 2026-03-18 17:24:35
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a347844]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@742d8467] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@577590163 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE id=?
+==> Parameters: 7(Long)
+<==    Columns: id, owner_id, name, species, breed, gender, age, weight, photo, health_status, vaccination, allergies, habits, emergency_contact, emergency_phone, status, create_time, update_time
+<==        Row: 7, 6, 1, 猫, , 1, 0, null, null, , , , <<BLOB>>, , , 1, 2026-03-18 17:24:29, 2026-03-18 17:24:35
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@742d8467]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@525a8bf7] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1246503783 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: DELETE FROM pet WHERE id=?
+==> Parameters: 7(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@525a8bf7]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ce7a021] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@261983209 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 6(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ce7a021]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b59514e] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ce1000c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1631616745 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 6(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b59514e]
+JDBC Connection [HikariProxyConnection@1392872307 wrapping com.mysql.cj.jdbc.ConnectionImpl@72a03c2d] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: total
+<==        Row: 2
+<==      Total: 1
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE (status = ?) ORDER BY rating DESC LIMIT ?
+==> Parameters: 1(Integer), 10(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ce1000c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10f0f5fb] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2043944421 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: total
+<==        Row: 2
+<==      Total: 1
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE (status = ?) ORDER BY rating DESC LIMIT ?
+==> Parameters: 1(Integer), 10(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10f0f5fb]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@327970df] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@387900707 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: total
+<==        Row: 2
+<==      Total: 1
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE (status = ?) ORDER BY rating DESC LIMIT ?
+==> Parameters: 1(Integer), 10(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@327970df]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56b63f97] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1465577900 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: total
+<==        Row: 2
+<==      Total: 1
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE (status = ?) ORDER BY rating DESC LIMIT ?
+==> Parameters: 1(Integer), 10(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56b63f97]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1cdfee87] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1568533074 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: total
+<==        Row: 2
+<==      Total: 1
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE (status = ?) ORDER BY rating DESC LIMIT ?
+==> Parameters: 1(Integer), 10(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1cdfee87]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2294fabc] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@758253136 wrapping com.mysql.cj.jdbc.ConnectionImpl@72a03c2d] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: total
+<==        Row: 2
+<==      Total: 1
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE (status = ?) ORDER BY rating DESC LIMIT ?
+==> Parameters: 1(Integer), 10(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2294fabc]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69f0acbd] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1085214623 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: total
+<==        Row: 2
+<==      Total: 1
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE (status = ?) ORDER BY rating DESC LIMIT ?
+==> Parameters: 1(Integer), 10(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69f0acbd]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a9f8e2] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@27971283 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: total
+<==        Row: 2
+<==      Total: 1
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE (status = ?) ORDER BY rating DESC LIMIT ?
+==> Parameters: 1(Integer), 10(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a9f8e2]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74a48c21] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@87284796 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74a48c21]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fd66206] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1848941459 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fd66206]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34063bc8] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1269264424 wrapping com.mysql.cj.jdbc.ConnectionImpl@72a03c2d] will not be managed by Spring
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE id=?
+==> Parameters: 1(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34063bc8]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25b8b8ac] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2039094445 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE id=?
+==> Parameters: 2(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25b8b8ac]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a69ca02] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@448663441 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE id=?
+==> Parameters: 1(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a69ca02]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e7eb024] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1474967346 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop WHERE (status = ? AND city = ?)
+==> Parameters: 1(Integer), 1(String)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e7eb024]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66f3f092] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1424931172 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: total
+<==        Row: 2
+<==      Total: 1
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE (status = ?) ORDER BY rating DESC LIMIT ?
+==> Parameters: 1(Integer), 10(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66f3f092]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31388c6e] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@210046111 wrapping com.mysql.cj.jdbc.ConnectionImpl@72a03c2d] will not be managed by Spring
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE id=?
+==> Parameters: 1(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 1, 4, 阳光宠物之家, <<BLOB>>, /shops/logo1.jpg, ["/shops/shop1_1.jpg","/shops/shop1_2.jpg","/shops/shop1_3.jpg"], 上海市, 上海市, 浦东新区, 张江高科技园区碧波路888号, 121.612290, 31.205830, 021-58001234, /license/lic1.jpg, /qual/qual1.jpg, 33, 5, 4.8, 1, 1, 2025-01-06 09:00:00, 2026-03-18 15:22:35
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31388c6e]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@208baa02] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@417368699 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT id,provider_id,name,description,logo,photos,province,city,district,address,longitude,latitude,phone,business_license,qualification,capacity,current_count,rating,status,verified,create_time,update_time FROM shop WHERE id=?
+==> Parameters: 2(Long)
+<==    Columns: id, provider_id, name, description, logo, photos, province, city, district, address, longitude, latitude, phone, business_license, qualification, capacity, current_count, rating, status, verified, create_time, update_time
+<==        Row: 2, 5, 萌宠乐园, <<BLOB>>, /shops/logo2.jpg, ["/shops/shop2_1.jpg","/shops/shop2_2.jpg"], 广东省, 广州市, 天河区, 珠江新城花城大道168号, 113.324520, 23.119450, 020-38001234, /license/lic2.jpg, /qual/qual2.jpg, 20, 3, 4.6, 1, 1, 2025-01-09 10:00:00, 2026-03-18 15:22:35
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@208baa02]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f27549d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@24856497 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f27549d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@745a8901] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1065761958 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM order_info WHERE (owner_id = ?)
+==> Parameters: 6(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@745a8901]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@316cea2] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1866222228 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM order_info WHERE (owner_id = ? AND status = ?)
+==> Parameters: 6(Long), 6(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@316cea2]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a76e5b1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1068187980 wrapping com.mysql.cj.jdbc.ConnectionImpl@72a03c2d] will not be managed by Spring
+==>  Preparing: SELECT id,owner_id,name,species,breed,gender,age,weight,photo,health_status,vaccination,allergies,habits,emergency_contact,emergency_phone,status,create_time,update_time FROM pet WHERE (owner_id = ?) ORDER BY create_time DESC
+==> Parameters: 6(Long)
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2debe9ed] was not registered for synchronization because synchronization is not active
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a76e5b1]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41a64cbb] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1974183767 wrapping com.mysql.cj.jdbc.ConnectionImpl@305cc0ef] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+JDBC Connection [HikariProxyConnection@1307990308 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM order_info WHERE (owner_id = ?)
+==> Parameters: 6(Long)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2debe9ed]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41a64cbb]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e9f82dc] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1976297147 wrapping com.mysql.cj.jdbc.ConnectionImpl@1d032a7b] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM message WHERE (receiver_id = ? AND is_read = ?)
+==> Parameters: 6(Long), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e9f82dc]
+^C

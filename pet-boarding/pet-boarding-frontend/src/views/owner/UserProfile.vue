@@ -263,7 +263,7 @@ const fetchMessages = async () => {
       getUnreadCount()
     ])
     if (msgRes.status === 'fulfilled') messages.value = msgRes.value.data?.records || msgRes.value.data || []
-    if (countRes.status === 'fulfilled') unreadCount.value = countRes.value.data || 
+    if (countRes.status === 'fulfilled') unreadCount.value = countRes.value.data?.count || 0
   } finally {
     msgLoading.value = false
   }

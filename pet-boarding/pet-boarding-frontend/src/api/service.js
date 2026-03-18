@@ -1,7 +1,9 @@
 import request from '@/utils/request'
 
 export function getServiceList(shopId) {
-  return request.get(`/service/list/${shopId}`)
+  return request.get('/service/list', {
+    params: { shopId }
+  })
 }
 
 export function addService(data) {
@@ -13,5 +15,5 @@ export function updateService(data) {
 }
 
 export function toggleServiceStatus(id) {
-  return request.put(`/service/toggle/${id}`)
+  return request.put(`/service/status/${id}`)
 }
